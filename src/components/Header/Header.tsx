@@ -81,7 +81,7 @@ const MenuBtn = styled.div<MenuBtnProps>`
     height: 2.5px;
     background-color: ${color.tertiary};
     transition-property: transform, width, background-color;
-    transition-duration: 0.7s;
+    transition-duration: 0.5s;
     transition-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
 
     &:not(:last-child) {

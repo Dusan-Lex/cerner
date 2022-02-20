@@ -65,7 +65,7 @@ const BlogPosts = styled.div`
   width: 100%;
   padding: 4rem 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 `;
 

@@ -17,7 +17,8 @@ const StyledSideBar = styled.div<StyledSideBarProps>`
   align-items: center;
   background-color: ${color.primary};
   transition: all 0.3s ease-in;
-  display: ${(props) => (props.sidebar ? "flex" : "none")};
+  visibility: ${(props) => (props.sidebar ? "visible" : "hidden")};
+  opacity: ${(props) => (props.sidebar ? "1" : "0")};
   @media only screen and (max-width: 900px) {
     top: 10rem;
   }
