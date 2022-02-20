@@ -76,6 +76,8 @@ const BlogPost = styled.div`
   flex-direction: column;
   @media only screen and (max-width: 900px) {
     width: 45%;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid ${mixin.rgba(color.secondary, 0.4)};
   }
   @media only screen and (max-width: 450px) {
     width: 100%;

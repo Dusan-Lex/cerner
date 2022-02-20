@@ -61,6 +61,7 @@ const ContactFormTextarea = styled.textarea`
   padding: 1rem;
   margin-top: 0.8rem;
   font-size: 1.8rem;
+  /* border: 1px solid grey; */
   color: ${color.secondary};
   ${mixin.placeholderColor(color.secondary)}
   &:focus {
@@ -76,7 +77,7 @@ const StyledContactFormInput = styled.div`
   }
   input {
     width: 100%;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     height: 5rem;
     padding: 1rem;
     margin-top: 0.8rem;
@@ -152,7 +153,7 @@ const ContactUs = () => {
           <Button
             color={color.tertiary}
             bgColor={color.primary}
-            fontSize="1.6rem"
+            fontSize="1.7rem"
             padding="1.6rem 6rem"
             margin="3rem 0 0 0"
             after

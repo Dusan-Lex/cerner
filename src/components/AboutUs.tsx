@@ -33,6 +33,11 @@ const Box2 = styled(Box1)`
     width: 100%;
     padding: 2rem;
   }
+  @media only screen and (max-width: 600px) {
+    button {
+      margin: auto;
+    }
+  }
 `;
 
 const AboutUs = () => {
