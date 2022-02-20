@@ -20,7 +20,7 @@ const StyledSideBar = styled.div<StyledSideBarProps>`
   visibility: ${(props) => (props.sidebar ? "visible" : "hidden")};
   opacity: ${(props) => (props.sidebar ? "1" : "0")};
   @media only screen and (max-width: 900px) {
-    top: 10rem;
+    top: 11rem;
   }
   @media only screen and (max-width: 400px) {
     width: 100%;
@@ -37,6 +37,16 @@ const SideBarList = styled.ul`
   @media only screen and (max-width: 400px) {
     text-align: center;
   }
+`;
+
+const Arr = styled.div`
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  width: 6rem;
+  height: 1.3rem;
+  clip-path: polygon(50% 0, 30% 100%, 70% 100%);
+  background-color: ${color.primary};
 `;
 
 interface SideBarProps {
@@ -58,6 +68,7 @@ const SideBar: React.FC<SideBarProps> = ({ sidebar }) => {
           <SideBarListItem key={index} item={item}></SideBarListItem>
         ))}
       </SideBarList>
+      <Arr></Arr>
     </StyledSideBar>
   );
 };
