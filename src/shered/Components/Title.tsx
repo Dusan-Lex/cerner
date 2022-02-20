@@ -4,13 +4,14 @@ interface StyledTitleProps {
   color1: string;
   color2: string;
   margin: string;
+  padding?: string;
 }
 
 const StyledTitle = styled.h3<StyledTitleProps>`
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0 0.5rem;
+  padding: ${(props) => props.padding || "0 0.5rem"};
   margin: 0;
   font-size: 4rem;
   font-weight: 400;
@@ -33,14 +34,21 @@ const Title = ({
   color1,
   color2,
   margin,
+  padding,
 }: {
   children: string;
   color1: string;
   color2: string;
   margin: string;
+  padding?: string;
 }) => {
   return (
-    <StyledTitle color1={color1} color2={color2} margin={margin}>
+    <StyledTitle
+      color1={color1}
+      color2={color2}
+      margin={margin}
+      padding={padding}
+    >
       {children}
     </StyledTitle>
   );

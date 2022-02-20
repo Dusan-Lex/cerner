@@ -21,6 +21,7 @@ const StyledButton = styled.button<StyledButtonProps>`
   font-size: ${(props) => props.fontSize || "1.6rem"};
   font-weight: 600;
   cursor: pointer;
+
   &:after {
     content: "";
     ${mixin.center};

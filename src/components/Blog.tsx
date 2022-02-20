@@ -13,10 +13,10 @@ const StyledBlog = styled.section`
   padding: 2rem 18rem;
 
   @media only screen and (max-width: 1300px) {
-    padding: 8rem;
+    padding: 2rem 8rem;
   }
   @media only screen and (max-width: 900px) {
-    padding: 3rem;
+    padding: 2rem 3rem;
   }
 `;
 
@@ -71,7 +71,6 @@ const BlogPosts = styled.div`
 
 const BlogPost = styled.div`
   width: 22%;
-  padding-bottom: 4rem;
   display: flex;
   margin: 1rem;
   flex-direction: column;
@@ -89,6 +88,8 @@ interface Box3Props {
 
 const Box3 = styled.div<Box3Props>`
   position: relative;
+  cursor: pointer;
+
   img {
     width: 100%;
     object-fit: cover;
@@ -139,6 +140,7 @@ const Blog = () => {
         color1={color.secondary}
         color2={color.primary}
         margin="0 auto 4rem auto"
+        padding="0 3rem"
       >
         Blog
       </Title>
