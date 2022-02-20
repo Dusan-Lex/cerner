@@ -112,17 +112,16 @@ const Box4 = styled.div`
   height: 50%;
 
   p {
-    padding: 1rem 0;
     line-height: 2rem;
     font-size: 1.6rem;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 10; /* number of lines to show */
+    -webkit-line-clamp: 10;
     -webkit-box-orient: vertical;
     span {
+      display: block;
       white-space: pre-wrap;
-      margin: 1.5rem 0;
       font-size: 2rem;
       font-weight: 500;
       color: ${color.primary};
