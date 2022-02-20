@@ -36,4 +36,23 @@ export const mixin = {
     Color(colorValue).lighten(amount).string(),
   rgba: (colorValue: any, opacity: any) =>
     Color(colorValue).alpha(opacity).string(),
+
+  placeholderColor: (colorValue: any) => css`
+    ::-webkit-input-placeholder {
+      color: ${colorValue} !important;
+      opacity: 0.8 !important;
+    }
+    :-moz-placeholder {
+      color: ${colorValue} !important;
+      opacity: 0.8 !important;
+    }
+    ::-moz-placeholder {
+      color: ${colorValue} !important;
+      opacity: 0.8 !important;
+    }
+    :-ms-input-placeholder {
+      color: ${colorValue} !important;
+      opacity: 0.8 !important;
+    }
+  `,
 };

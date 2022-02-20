@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { color, mixin } from "../styles";
+import { mixin } from "../styles";
 
 interface StyledButtonProps {
   color: string;
@@ -12,6 +12,7 @@ interface StyledButtonProps {
 
 const StyledButton = styled.button<StyledButtonProps>`
   position: relative;
+  overflow: hidden;
   padding: ${(props) => props.padding || "2rem 6rem"};
   width: -moz-fit-content;
   width: fit-content;
@@ -22,17 +23,23 @@ const StyledButton = styled.button<StyledButtonProps>`
   font-weight: 600;
   cursor: pointer;
 
-  &:after {
+  &::after {
     content: "";
     ${mixin.center};
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
-    width: 5rem;
-    background-color: ${mixin.darken(color.primary, 0.3)};
-    border-radius: 5rem 0 0 0;
+    height: 10rem;
+    width: 10rem;
+    transform: translateX(5rem) scale(0);
+    transition: all 0.2s ease;
+    background-color: ${(props) => mixin.darken(props.bgColor, 0.3)};
+    border-radius: 50%;
     display: ${(props) => (props.after ? "block" : "none")};
+  }
+
+  &:hover::after {
+    transform: translateX(5rem) scale(1);
   }
 
   span {

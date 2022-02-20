@@ -167,9 +167,11 @@ const Blog = () => {
           </Description>
           <Button
             color={color.primary}
-            padding="2rem 5rem 2rem 0"
+            bgColor={color.tertiary}
+            margin="1rem 0 0"
+            padding="1rem 5rem 1rem 0"
             fontSize="1.8rem"
-            after={false}
+            after
           >
             Read more
           </Button>
@@ -214,9 +216,10 @@ const Blog = () => {
               </p>
               <Button
                 color={color.primary}
-                padding="0rem 5rem 0rem 0"
+                bgColor={color.tertiary}
+                padding="1rem 5rem 1rem 0"
                 fontSize="1.8rem"
-                after={false}
+                after
               >
                 Read more
               </Button>

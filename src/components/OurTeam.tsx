@@ -61,7 +61,7 @@ const OurTeam = () => {
           bgColor={color.primary}
           margin="4rem auto"
           fontSize="1.8rem"
-          after={false}
+          after
         >
           Read more
         </Button>

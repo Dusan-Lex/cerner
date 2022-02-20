@@ -19,7 +19,7 @@ const StyledWhyUs = styled.section`
   }
 `;
 
-const Box1 = styled.div`
+const WhyUsBox1 = styled.div`
   z-index: 1;
   position: relative;
   width: 100%;
@@ -45,7 +45,7 @@ const Box1 = styled.div`
   }
 `;
 
-const Box2 = styled.div`
+const WhyUsBox2 = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
@@ -84,7 +84,7 @@ const Box2 = styled.div`
   }
 `;
 
-const Box3 = styled.div`
+const WhyUsBox3 = styled.div`
   position: relative;
   width: 100%;
   img {
@@ -121,7 +121,7 @@ const Box3 = styled.div`
 const WhyUs = () => {
   return (
     <StyledWhyUs>
-      <Box1>
+      <WhyUsBox1>
         <Title
           color1={color.secondary}
           color2={color.primary}
@@ -146,8 +146,8 @@ const WhyUs = () => {
           perspiciatis unde omnis iste natus error sit voluptatem accusantium
           doloremque laudantium totam rem aperiam eaque ipsa quae.
         </Description>
-      </Box1>
-      <Box2>
+      </WhyUsBox1>
+      <WhyUsBox2>
         <div className="item">
           <div>
             <img src={Img1} alt="icon"></img>
@@ -169,11 +169,11 @@ const WhyUs = () => {
           </div>
           <p>Smartphone</p>
         </div>
-      </Box2>
-      <Box3>
+      </WhyUsBox2>
+      <WhyUsBox3>
         <img src={Img} alt="background"></img>
         <h5>Don't stop until it's perfect</h5>
-      </Box3>
+      </WhyUsBox3>
     </StyledWhyUs>
   );
 };

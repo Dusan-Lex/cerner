@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components";
-import { color, mixin } from "../../shered/styles";
-import LogoImg from "../../images/logo-small.png";
+import { color, mixin } from "../shered/styles";
+import LogoImg from "../images/logo-small.png";
 import { useState } from "react";
-import SideBar from "../SideBar";
+import SideBar from "./SideBar";
 
 const StyledHeader = styled.header`
   position: fixed;
